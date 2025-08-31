@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-    <title>Image Slider</title>
-  </head>
-  <body>
-    <div id="slideContainer">
-      <button id='prev' class="sliderBtn">&lt;
-          <button id="next" class="sliderBtn">&gt;</button>
-      </button>
-      <div class="slide show">
-        <img src="./images/im1.jpg" alt="slide1" />
-        <p>Slide No. 1</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im2.jpg" alt="slide2" />
-        <p>Slide No. 2</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im3.jpg" alt="slide3" />
-        <p>Slide No. 3</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im4.jpg" alt="slide4" />
-        <p>Slide No. 4</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im5.jpg" alt="slide5" />
-        <p>Slide No. 5</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im6.jpg" alt="slide6" />
-        <p>Slide No. 6</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im6.jpg" alt="slide6" />
-        <p>Slide No. 7</p>
-      </div>
-      <div class="slide">
-        <img src="./images/im4.jpg" alt="slide4" />
-        <p>Slide No. 8</p>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch Gallery with Birds Effect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="vanta-birds-background"></div>
+
+  <div class="gallery-wrap">
+    <img src="images/back button.png" id="backbtn" alt="Back">
+    <div class="gallery">
+      <img src="images/im1.jpg" alt="Artwork 1">
+      <img src="images/im2.jpg" alt="Artwork 2">
+      <img src="images/im3.jpg" alt="Artwork 3">
+      <img src="images/im4.jpg" alt="Artwork 4">
+      <img src="images/im5.jpg" alt="Artwork 5">
+      <img src="images/im6.jpg" alt="Artwork 6">
+      <img src="images/im7.jpg" alt="Artwork 7">
+      <img src="images/im8.jpg" alt="Artwork 8">
+      <img src="images/im9.jpg" alt="Artwork 9">
+      <img src="images/im10.jpg" alt="Artwork 10">
+      <img src="images/im11.jpg" alt="Artwork 11">
+      <img src="images/im12.jpg" alt="Artwork 12">
+      <img src="images/im13.jpg" alt="Artwork 13">
+      <img src="images/im14.jpg" alt="Artwork 14">
+      <img src="images/im15.jpg" alt="Artwork 15">
+      <img src="images/im16.jpg" alt="Artwork 16">
+      <img src="images/im17.jpg" alt="Artwork 17">
+      <img src="images/im18.jpg" alt="Artwork 18">
     </div>
-    <script src='script.js'></script>
-  </body>
+    <img src="images/next button.png" id ="nextbtn" alt="Next">
+  </div>
+
+  <div class="quote-container">
+    <p id="quote">"Art speaks where words are unable to explain."</p>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+  </div>
+
+</body>
 </html>
